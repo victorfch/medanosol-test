@@ -1,11 +1,17 @@
 import { createContext, useState } from "react"
 
+const initialStore = {
+	pokemons: [],
+	filteredPokemons: []
+}
+
 const PokeContext = createContext()
 
 export function PokeContextProvider({children}) {
-	const [pokemons, setPokemons] = useState([])
+	const [store, setStore] = useState(initialStore)
+	
   return (
-		<PokeContext.Provider value={{pokemons, setPokemons}}>
+		<PokeContext.Provider value={{store, setStore}}>
 			{children}
 		</PokeContext.Provider>
   )

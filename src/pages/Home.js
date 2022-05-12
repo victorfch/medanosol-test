@@ -1,24 +1,21 @@
-import { useContext, useEffect } from "react"
+import { useContext} from "react"
 import PokeLink from "../components/PokeLink";
 import PokeContext from "../context/PokeContext";
-import { getPokemons } from "../services/getPokemons"
 
 export default function Home() {
-	const {pokemons, setPokemons} = useContext(PokeContext)
-	useEffect(() => {
-		getPokemons()
-			.then(data => setPokemons(data))
-			.catch(e => console.log(e))
-	}, [])
+	const {store} = useContext(PokeContext)
 
-	if (!pokemons) return <p>Loading</p>
+	if (!store.pokemons) return <p>Loading</p>
 
   return (
 		<div>
 			<h1>Pokemons</h1>
 			<div>
 				<ul>
-					{pokemons.map(poke => <PokeLink key={poke.name} poke={poke} />)}
+					{ store.filteredPokemons.length > 0 
+						? store.filteredPokemons.map(poke => <PokeLink key={poke.name} poke={poke} />)
+						: <p>No pokemon has been found</p>
+					}
 				</ul>
 			</div>
 		</div>

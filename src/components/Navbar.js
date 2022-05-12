@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Finder from "./Finder";
 
 export default function Navbar() {
 	const styles = {
@@ -28,6 +29,9 @@ export default function Navbar() {
 			</div>
 			<div>
 				<Link style={styles.link} to="/contact">Contact us</Link>
+			</div>
+			<div>
+				<Finder />
 			</div>
 		</nav>
 	)
