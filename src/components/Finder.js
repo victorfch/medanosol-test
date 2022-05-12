@@ -1,19 +1,18 @@
 import { useContext} from "react"
 import PokeContext from "../context/PokeContext"
 import useField from "../hooks/useField"
+import styled from "styled-components"
+
+const Input = styled.input`
+	outline: none;
+	padding: 10px;
+	border: 1px solid #b1b3b5;
+	border-radius: 5px;
+`
 
 export default function Finder() {
 	const {store, setStore} = useContext(PokeContext)
 	const poke = useField("text")
-
-	const styles = {
-		input: {
-			outline: "none",
-			padding: "10px",
-			border: "1px solid #b1b3b5",
-			borderRadius: "5px"
-		}
-	}
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
@@ -30,7 +29,7 @@ export default function Finder() {
 	return (
 		<div>
 			<form onSubmit={handleSubmit}>
-				<input style={styles.input} placeholder="Search pokemon" {...poke} />
+				<Input placeholder="Search pokemon" {...poke} />
 			</form>
 		</div>
 	)

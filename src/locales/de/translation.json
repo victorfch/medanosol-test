@@ -1,0 +1,18 @@
+{
+  "navbar": {
+    "home": "",
+    "about-us": "",
+    "contact-us": "",
+		"search": ""
+  },
+	"home": {
+		"loading": "",
+		"pokemons-not-found": ""
+	},
+	"pokemon-detais": {
+		"name": "",
+		"weight": "",
+		"height": "",
+		"moves-number": ""
+	}
+}

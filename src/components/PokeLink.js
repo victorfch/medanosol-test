@@ -1,4 +1,18 @@
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+
+const Card = styled.div`
+	border: 1px solid red;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px;
+	cursor: pointer;
+`
+
+const StyledLink = styled(Link)`
+	text-decoration: none;
+	color: red
+`
 
 export default function PokeLink({poke}) {
 	const id = poke.url
@@ -6,22 +20,7 @@ export default function PokeLink({poke}) {
 		.filter(text => text)
 		.pop()
 	
-	const styles = {
-		item: {
-			border: "1px solid red",
-			borderRadius: "10px",
-			padding: "10px",
-			margin: "10px",
-			cursor: "pointer"
-		},
-
-		link: {
-			textDecoration: "none",
-			color: "red"
-		}
-	}
-
   return (
-    <div style={styles.item}><Link style={styles.link} to={`/pokemon/${id}`}>{poke.name}</Link></div>
+    <Card><StyledLink to={`/pokemon/${id}`}>{poke.name}</StyledLink></Card>
   )
 }
