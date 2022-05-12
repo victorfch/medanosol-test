@@ -5,8 +5,23 @@ export default function PokeLink({poke}) {
 		.split("/")
 		.filter(text => text)
 		.pop()
+	
+	const styles = {
+		item: {
+			border: "1px solid red",
+			borderRadius: "10px",
+			padding: "10px",
+			margin: "10px",
+			cursor: "pointer"
+		},
+
+		link: {
+			textDecoration: "none",
+			color: "red"
+		}
+	}
 
   return (
-    <li><Link to={`/pokemon/${id}`}>{poke.name}</Link></li>
+    <div style={styles.item}><Link style={styles.link} to={`/pokemon/${id}`}>{poke.name}</Link></div>
   )
 }

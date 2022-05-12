@@ -6,6 +6,15 @@ export default function Finder() {
 	const {store, setStore} = useContext(PokeContext)
 	const poke = useField("text")
 
+	const styles = {
+		input: {
+			outline: "none",
+			padding: "10px",
+			border: "1px solid #b1b3b5",
+			borderRadius: "5px"
+		}
+	}
+
 	const handleSubmit = (e) => {
 		e.preventDefault()
 
@@ -21,7 +30,7 @@ export default function Finder() {
 	return (
 		<div>
 			<form onSubmit={handleSubmit}>
-				<input placeholder="Search pokemon" {...poke} />
+				<input style={styles.input} placeholder="Search pokemon" {...poke} />
 			</form>
 		</div>
 	)
