@@ -1,9 +1,10 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect } from "react"
 import PokeLink from "../components/PokeLink";
+import PokeContext from "../context/PokeContext";
 import { getPokemons } from "../services/getPokemons"
 
 export default function Home() {
-	const [pokemons, setPokemons] = useState([]);
+	const {pokemons, setPokemons} = useContext(PokeContext)
 	useEffect(() => {
 		getPokemons()
 			.then(data => setPokemons(data))
