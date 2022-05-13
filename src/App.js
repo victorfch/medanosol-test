@@ -1,5 +1,6 @@
-import Navbar from "./components/Navbar";
-import Navigation from "./components/Navigation";
+import Footer from "./components/Footer/index.js";
+import Navbar from "./components/Navbar/index.js";
+import Navigation from "./components/Navigation/index.js";
 import usePokemons from "./hooks/usePokemons";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         <div>
             <Navbar />
             <Navigation />
+            <Footer />
         </div>
     );
 }

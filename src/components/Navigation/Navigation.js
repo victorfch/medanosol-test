@@ -1,11 +1,11 @@
 import {Route, Routes} from 'react-router-dom'
-import About from '../pages/About'
-import Home from '../pages/Home'
-import PokemonDetails from '../pages/PokemonDetails'
+import About from '../../pages/About'
+import Home from '../../pages/Home'
+import PokemonDetails from '../../pages/PokemonDetails'
 
 export default function Navigation() {
 	return (
-		<div>
+		<div style={{minHeight: "78vh"}}>
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/about' element={<About />} />

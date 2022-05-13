@@ -9,10 +9,12 @@
 		"loading": "Laden...",
 		"pokemons-not-found": "Es wurde kein Pokemon gefunden"
 	},
-	"pokemon-detais": {
+	"pokemon-details": {
+		"details": "Pokemon Details",
 		"name": "Name: ",
 		"weight": "Gewicht: ",
 		"height": "Höhe: ",
 		"moves-number": "Anzahl der Bewegungen: "
-	}
+	},
+	"footer": "Test durchgeführt von Victor"
 }

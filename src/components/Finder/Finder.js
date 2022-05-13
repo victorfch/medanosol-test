@@ -1,15 +1,8 @@
 import { useContext} from "react"
-import PokeContext from "../context/PokeContext"
-import useField from "../hooks/useField"
-import styled from "styled-components"
+import PokeContext from "../../context/PokeContext"
+import useField from "../../hooks/useField"
 import { useTranslation } from "react-i18next"
-
-const Input = styled.input`
-	outline: none;
-	padding: 10px;
-	border: 1px solid #b1b3b5;
-	border-radius: 5px;
-`
+import { Input } from "./styles"
 
 export default function Finder() {
 	const {store, setStore} = useContext(PokeContext)
