@@ -1,6 +1,7 @@
 # Medano Solution Test App
 
-## NETLIFY URL
+## VERCEL URL
+https://medanosol-test.vercel.app/
 
 ## Installed packages
 
