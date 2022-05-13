@@ -10,6 +10,12 @@ export const Container = styled.div`
 	margin-right: auto;
 `
 
+export const InfoContainer = styled(Container)`
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+`
+
 export const FlexContainer = styled(Container)`
 	display: flex;
 	flex-direction: row;

@@ -1,13 +1,20 @@
 {
 	"navbar": {
     	"home": "HOME",
-    	"about-us": "ABOUT US",
+    	"info": "INFO",
     	"contact-us": "CONTACT US",
 		"search": "Search Pokemon"
   	},
 	"home": {
 		"loading": "Loading...",
 		"pokemons-not-found": "No pokemon has been found"
+	},
+	"info": {
+		"title": "Extra information",
+		"structure": "Structure"
+	},
+	"contact-us": {
+		"title": "Contact us"
 	},
 	"pokemon-details": {
 		"details": "Pokemon details",
@@ -16,5 +23,8 @@
 		"height": "Height: ",
 		"moves-number": "No. of movements: "
 	},
+	"no-pokemon": "No results found",
+	"error": "ERROR 404",
+	"page-not-found": "Page not found",
 	"footer": "Test by Victor"
 }

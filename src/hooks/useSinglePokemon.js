@@ -3,12 +3,17 @@ import { getPokemon } from "../services/getPokemon";
 
 export default function useSinglePokemon(id) {
 	const [pokemon, setPokemon] = useState({})
+	const [error, setError] = useState(false)
+	const [loading, setLoading] = useState(true)
 
 	useEffect(() => {
 		getPokemon(id)
-			.then(data => setPokemon(data))
-			.catch(e => console.log(e))
+			.then(data => {
+				setPokemon(data)
+				setLoading(false)
+			})
+			.catch(() => setError(true))
 	}, [id])
 
-	return [pokemon] 
+	return [pokemon, error, loading]
 }

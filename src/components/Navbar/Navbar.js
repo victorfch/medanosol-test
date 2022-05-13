@@ -11,7 +11,7 @@ export default function Navbar() {
 				<StyledLink to="/">{t("navbar.home")}</StyledLink>
 			</div>
 			<div>
-				<StyledLink to="/about">{t("navbar.about-us")}</StyledLink>
+				<StyledLink to="/info">{t("navbar.info")}</StyledLink>
 			</div>
 			<div>
 				<StyledLink to="/contact">{t("navbar.contact-us")}</StyledLink>
