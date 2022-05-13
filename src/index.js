@@ -9,16 +9,16 @@ import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <I18nextProvider i18n={i18n}>
-      <PokeContextProvider>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </PokeContextProvider>
-    </I18nextProvider>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <I18nextProvider i18n={i18n}>
+            <PokeContextProvider>
+                <BrowserRouter>
+                    <App />
+                </BrowserRouter>
+            </PokeContextProvider>
+        </I18nextProvider>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

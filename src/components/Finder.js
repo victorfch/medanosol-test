@@ -2,6 +2,7 @@ import { useContext} from "react"
 import PokeContext from "../context/PokeContext"
 import useField from "../hooks/useField"
 import styled from "styled-components"
+import { useTranslation } from "react-i18next"
 
 const Input = styled.input`
 	outline: none;
@@ -13,6 +14,7 @@ const Input = styled.input`
 export default function Finder() {
 	const {store, setStore} = useContext(PokeContext)
 	const poke = useField("text")
+	const {t} = useTranslation()
 
 	const handleSubmit = (e) => {
 		e.preventDefault()
@@ -29,7 +31,7 @@ export default function Finder() {
 	return (
 		<div>
 			<form onSubmit={handleSubmit}>
-				<Input placeholder="Search pokemon" {...poke} />
+				<Input placeholder={t("navbar.search")} {...poke} />
 			</form>
 		</div>
 	)

@@ -1,10 +1,10 @@
 {
-  "navbar": {
-    "home": "Inicio",
-    "about-us": "Sobre nosotros",
-    "contact-us": "Contáctanos",
-		"search": "Buscar pokemon"
-  },
+	"navbar": {
+    	"home": "INICIO",
+    	"about-us": "SOBRE NOSOTROS",
+    	"contact-us": "CONTACTANOS",
+		"search": "Buscar Pokemon"
+  	},
 	"home": {
 		"loading": "Cargando...",
 		"pokemons-not-found": "No se han encontrado pokemons"
@@ -13,6 +13,6 @@
 		"name": "Nombre: ",
 		"weight": "Peso: ",
 		"height": "Altura: ",
-		"moves-number": "Nº Movimientos"
+		"moves-number": "Nº Movimientos: "
 	}
 }

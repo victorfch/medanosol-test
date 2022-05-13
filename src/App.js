@@ -3,14 +3,14 @@ import Navigation from "./components/Navigation";
 import usePokemons from "./hooks/usePokemons";
 
 function App() {
-  usePokemons()
+    usePokemons()
 
-  return (
-    <div>
-      <Navbar />
-      <Navigation />
-    </div>
-  );
+    return (
+        <div>
+            <Navbar />
+            <Navigation />
+        </div>
+    );
 }
 
 export default App;

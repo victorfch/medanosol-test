@@ -1,18 +1,18 @@
 {
-  "navbar": {
-    "home": "",
-    "about-us": "",
-    "contact-us": "",
-		"search": ""
-  },
+	"navbar": {
+    	"home": "HOME",
+    	"about-us": "ABOUT US",
+    	"contact-us": "CONTACT US",
+		"search": "Search Pokemon"
+  	},
 	"home": {
-		"loading": "",
-		"pokemons-not-found": ""
+		"loading": "Loading...",
+		"pokemons-not-found": "No pokemon has been found"
 	},
 	"pokemon-detais": {
-		"name": "",
-		"weight": "",
-		"height": "",
-		"moves-number": ""
+		"name": "Name: ",
+		"weight": "Weight: ",
+		"height": "Height: ",
+		"moves-number": "No. of movements: "
 	}
 }

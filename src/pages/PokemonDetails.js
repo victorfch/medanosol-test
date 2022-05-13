@@ -5,12 +5,12 @@ export default function PokemonDetails() {
 	const {id} = useParams()
 	const [pokemon] = useSinglePokemon(id)
 
-  return (
+  	return (
 		<div>
 			Detalles del pokemon
 			<pre>
 				{JSON.stringify(pokemon, null, 2)}
 			</pre>
 		</div>
-  )
+  	)
 }

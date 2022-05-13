@@ -20,7 +20,7 @@ export default function PokeLink({poke}) {
 		.filter(text => text)
 		.pop()
 	
-  return (
-    <Card><StyledLink to={`/pokemon/${id}`}>{poke.name}</StyledLink></Card>
-  )
+  	return (
+    	<Card><StyledLink to={`/pokemon/${id}`}>{poke.name}</StyledLink></Card>
+  	)
 }

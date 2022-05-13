@@ -8,10 +8,10 @@ export default function usePokemons() {
 	useEffect(() => {
 		getPokemons()
 			.then(data => setStore({
-        ...store,
-        filteredPokemons: data,
-        pokemons: data
-      }))
+        		...store,
+        		filteredPokemons: data,
+        		pokemons: data
+      		}))
 			.catch(e => console.log(e))
 	}, [])
 }

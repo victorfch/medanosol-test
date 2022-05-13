@@ -34,17 +34,16 @@ const Dropdown = styled.div`
 
 export default function LanguagePicker(){
 	const [collapsed, setCollapsed] = useState(false)
-	const { t, i18n } = useTranslation()
+	const { i18n } = useTranslation()
 
-  return(
+	return (
 		<Picker onClick={() => setCollapsed(!collapsed)}>
-			BOX
+			{i18n.language.toUpperCase()}
 			<Dropdown collapsed={collapsed}>
-				<StyledButton>EN</StyledButton>
-				<StyledButton>ES</StyledButton>
-				<StyledButton>DE</StyledButton>
+				<StyledButton onClick={() => i18n.changeLanguage('en')}>EN</StyledButton>
+				<StyledButton onClick={() => i18n.changeLanguage('es')}>ES</StyledButton>
+				<StyledButton onClick={() => i18n.changeLanguage('de')}>DE</StyledButton>
 			</Dropdown>
 		</Picker>
-  )
-
+  	)
 }
